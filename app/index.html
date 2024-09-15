@@ -41,12 +41,42 @@
   </div>
 </nav>
 	  
-<style>
-      #current {
-        scroll-margin-top: 100px;
-      }
-    </style>
-  </head>
+<div class="container">
+      <div class="row mt-3">
+        <div class="col-2 text-right">
+          <button class="btn btn-link btn-small" onclick="$('#previoustrack')[0].click();">
+            <i class="fas fa-backward">
+            </i>
+          </button>
+        </div>
+        <div class="col-8 text-center">
+          <b>Life Song</b>
+        </div>
+        <div class="col-2 text-left">
+          <button class="btn btn-link btn-small" onclick="$('#nexttrack')[0].click();">
+            <i class="fas fa-forward">
+            </i>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <audio id="audioplayer" controls="true" autoplay="true">
+            <source src="https://cdn.goog.com/music/life%20song.mp3" />
+          </audio>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <div class="overflow-auto" style="height: 425px;">
+            <div id="Tracks" class="can-hide card d-block">
+              <div class="card-header">
+                <div class="row">
+                  <div class="col-3">
+                    <a href="?SortProperty=Date&SortDirection=Ascending&controller.redirect=?">
+                      <i class="far fa-calendar-alt" alt="Date">
+                      </i>
+                    </a>
 
 ..........
 	    hello love
