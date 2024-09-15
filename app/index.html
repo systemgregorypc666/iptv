@@ -3,44 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="./favicon.png" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="theme-color" content="#f8fafc" />
-    <link rel="manifest" crossorigin="use-credentials" href="./manifest.json" />
-    
-		<link rel="modulepreload" href="./_app/immutable/entry/start.3663dc0c.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.873908ac.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.351ef785.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.53598fdd.js">
+   ............
+ <style>
+      #current {
+        scroll-margin-top: 100px;
+      }
+    </style>
   </head>
+
   <body>
-    <div style="display: contents">
-			<script>
-				{
-					__sveltekit_1ovvqxe = {
-						base: new URL(".", location).pathname.slice(0, -1),
-						env: {}
-					};
-
-					const element = document.currentScript.parentElement;
-
-					Promise.all([
-						import("./_app/immutable/entry/start.3663dc0c.js"),
-						import("./_app/immutable/entry/app.53598fdd.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element);
-					});
-
-					if ('serviceWorker' in navigator) {
-						addEventListener('load', function () {
-							navigator.serviceWorker.register('./service-worker.js');
-						});
-					}
-				}
-			</script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Goog <small class="text-muted">Steve Kramer's Music</small></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+    </span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link " href="/about.html">About</a>
+      <a class="nav-link " href="/artists.html">Artists</a>
+    </div>
+  </div>
+</nav>
+	  
 
 
-
-
+..........
 	    hello love
 		</div>
   </body>
