@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Swiper demo</title>
+
+<link rel="stylesheet" href="../dist/css/swiper.min.css">
+
+<style>
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 500px;
+        height: 300px;
+        margin: 20px auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        line-height: 300px;
+    }
+    </style>
+</head>
+<body>
+
+<div class="swiper-container">
+<div class="swiper-wrapper">
+<div class="swiper-slide">Slide 1</div>
+<div class="swiper-slide">Slide 2</div>
+<div class="swiper-slide">Slide 3</div>
+<div class="swiper-slide">Slide 4</div>
+<div class="swiper-slide">Slide 5</div>
+<div class="swiper-slide">Slide 6</div>
+<div class="swiper-slide">Slide 7</div>
+<div class="swiper-slide">Slide 8</div>
+<div class="swiper-slide">Slide 9</div>
+<div class="swiper-slide">Slide 10</div>
+</div>
+
+<div class="swiper-pagination"></div>
+
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+
+<script src="../dist/js/swiper.min.js" type="69be91edf98cfecdf074c595-text/javascript"></script>
+
+<script type="69be91edf98cfecdf074c595-text/javascript">
+    var swiper = new Swiper('.swiper-container', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        pagination: '.swiper-pagination',
+        paginationType: 'progress'
+    });
+    </script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="69be91edf98cfecdf074c595-|49" defer></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8c4e54d3be0b9ab3',t:'MTcyNjYzMTAwMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
