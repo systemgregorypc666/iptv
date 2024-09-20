@@ -102,62 +102,22 @@
 </li>
 </ul>
 </div>
+   <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Life video" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="TVIP: Red Global" />
+    <meta property="og:description" content="Click de Lista canales" />
+
+	  
+ <style>
+      #current {
+        scroll-margin-top: 100px;
+      }
+    </style>
+  </head>
 
 
-	
-
-
-
-
-
-RunFunctions.push(function(){
-    
-    //SUBMENUS
-    $(".has-dropdown, .dropdown").hover(function(){
-        $(this).find(".dropdown").stop().slideDown();
-    }, function(){
-        $(this).find(".dropdown").stop().slideUp();
-    });
-
-    $(".acao-entrar").click(function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        CarregaModalDinamica(urlSite + "/views/membro/_login.php");
-    });
-
-    $(".acao-criar-conta").click(function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        CarregaModalDinamica( urlSite + "/views/membro/_criarConta.php");
-    });
-	
-	$("#bt-busca").click(function() {
-		if($("#query").val().length > 1) {     
-			$("#searchform").submit(); //invoke form submission
-		} else if($("#query").val().length == 1) { 
-			alert('Pesquisa muito curta.');
-		}
-	});
-	
-	$('#searchform').keypress(function(event){
-		if (event.keyCode === 10 || event.keyCode === 13) 
-			if($("#query").val().length > 1) {     
-				$("#searchform").submit(); //invoke form submission
-			} else if($("#query").val().length == 0) { 
-				event.preventDefault();
-			} else if($("#query").val().length == 1) { 
-				event.preventDefault();
-				alert('Pesquisa muito curta.');
-			}
-  	});
-	
-	$(".acao-logout").click(function(e){
-		e.preventDefault();
-		$.get(urlSite+"/inc/membro/_ajaxLogout.php",function(){
-			window.location.reload();
-		});
-	});
-});
 
 </script>
 
