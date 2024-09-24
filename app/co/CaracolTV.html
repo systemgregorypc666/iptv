@@ -201,54 +201,7 @@ Idioma<i class="fa fa-angle-down fa-fw"></i></a>
 </header>
 <script type="39ca899f62a09ff9bf72da17-text/javascript">
 
-RunFunctions.push(function(){
-    
-    //SUBMENUS
-    $(".has-dropdown, .dropdown").hover(function(){
-        $(this).find(".dropdown").stop().slideDown();
-    }, function(){
-        $(this).find(".dropdown").stop().slideUp();
-    });
 
-    $(".acao-entrar").click(function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        CarregaModalDinamica(urlSite + "/views/membro/_login.php");
-    });
-
-    $(".acao-criar-conta").click(function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        CarregaModalDinamica( urlSite + "/views/membro/_criarConta.php");
-    });
-	
-	$("#bt-busca").click(function() {
-		if($("#query").val().length > 1) {     
-			$("#searchform").submit(); //invoke form submission
-		} else if($("#query").val().length == 1) { 
-			alert('Pesquisa muito curta.');
-		}
-	});
-	
-	$('#searchform').keypress(function(event){
-		if (event.keyCode === 10 || event.keyCode === 13) 
-			if($("#query").val().length > 1) {     
-				$("#searchform").submit(); //invoke form submission
-			} else if($("#query").val().length == 0) { 
-				event.preventDefault();
-			} else if($("#query").val().length == 1) { 
-				event.preventDefault();
-				alert('Pesquisa muito curta.');
-			}
-  	});
-	
-	$(".acao-logout").click(function(e){
-		e.preventDefault();
-		$.get(urlSite+"/inc/membro/_ajaxLogout.php",function(){
-			window.location.reload();
-		});
-	});
-});
 
 </script>
 
@@ -263,7 +216,7 @@ RunFunctions.push(function(){
 <img width="120" height="120" class="b-radius-5" src="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/1fab942697a3a23fe8ca40feeeb315a2.webp" alt="Caracol TV">
 </div>
 <div class="media-body p-l-15 p-r-15 media-middle text-center-xs">
-<img width="200" class="visible-xs center-block logo-mobile" src="https://www.cxtv.com.br/img/Tvs/Logo/webp-l/1fab942697a3a23fe8ca40feeeb315a2.webp" alt="Caracol TV">
+<img width="200" class="visible-xs center-block logo-mobile" src="https://www.youtube.com/embed/jf4lw1YQpnM?si=AEXzAaQ-XFs3kpLL" alt="Caracol TV">
 <h1 class="bold no-margin medium-3">Caracol TV En Vivo</h1>
 <h2 class="slogan m-t-5 m-b-5" style="font-size:14px;">Tú nos ves, Caracol te ve</h2>
 <div style="height: 280px" class="p-t-20 hidden-md hidden-lg text-center">
