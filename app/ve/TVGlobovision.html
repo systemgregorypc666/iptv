@@ -180,87 +180,23 @@
 <a href="#" class="acao-reportar-bug btn btn-transparent-b btn-xs">¿No funciona?</a>
 </div>
 </div>
-<div class="m-t-30 hidden-sm hidden-xs">
+<div> class="m-t-30 hidden-sm hidden-xs">
 
-<div class="ad-titulo p-t-10 p-b-10 text-center">Publicidad</div>
+<div> class="ad-titulo p-t-10 p-b-10 text-center">Publicidad</div>
 
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8134863405909594" data-ad-slot="3345361993" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<ins> class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8134863405909594" data-ad-slot="3345361993" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script type="39ca899f62a09ff9bf72da17-text/javascript">
  (adsbygoogle = window.adsbygoogle || []).push({});
 </script> </div>
 
-
-
-
-<script type="39ca899f62a09ff9bf72da17-text/javascript">
-    RunFunctions.push(function(){
-		
-		$(".openPlayer").click(function(e){
-		  e.preventDefault();
-		  var href = $(this).attr('href');
-		  var player = window.open(href, 'player', 'noreferrer noopener, width=800,height=950');
-		});
-        
-		$(document).on("click", ".acao-favoritos", {}, function(e) {
-						e.preventDefault();
-			e.stopPropagation();
-			CarregaModalDinamica(urlSite + "/views/membro/_login.php?id_canal=1084");
-			        });
-        
-        $(".acao-reportar-bug").click(function(e){
-            e.preventDefault();
-           CarregaModalDinamica(urlSite + '/views/widgets/_reportar.php?id_canal=1084'); 
-        });
-		
-		function AjaxFavoritos(id_usuario,id_canal,refresh){
-			var atualiza = false;
-			var url = urlSite + "/inc/membro/_ajaxFavoritos.php";
-			var btnHolder = $(".box-favoritos"); 
-			var btnAdd = '<a class="btn btn-default acao-favoritos" rel="nofollow"><i class="fa text-alizarin fa-heart p-t-5"></i>&nbsp;Agregar a Favoritos</a>';
-			var btnDel = '<a class="btn btn-default acao-favoritos" rel="nofollow"><i class="fa text-alizarin fa-fw fa-times p-t-5"></i>&nbsp;Eliminar de Favoritos</a>';
-			var btnTempAdd = '<a class="animated rubberBand btn-default btn btn-emerald"><i class="fa fa-check fa-fw fa-lg"></i>&nbsp;Agregado a Favoritos</a>'
-			var btnTempDel = '<a class="animated rubberBand btn-default btn btn-emerald"><i class="fa fa-check fa-fw fa-lg"></i>&nbsp;Eliminado de Favoritos</a>'
-		
-			$.ajax({
-				type:"POST",
-				url:url,
-				data:{id_usuario:id_usuario,id_canal:id_canal},
-				success:function(resposta){
-					
-					resposta=$.trim(resposta);
-					
-					if(resposta == "adicionado"){
-						btnHolder.html(btnTempAdd);
-						setTimeout(function(){
-							btnHolder.html(btnDel);
-						},2000);
-		
-					}else if(resposta == "removido"){
-						if(refresh)
-							window.location.reload();
-		
-						btnHolder.html(btnTempDel);
-						$("#txtAnotacoes").val("");
-						setTimeout(function(){
-							btnHolder.html(btnAdd);
-						},2000);
-		
-					}else{
-						alert("Ocurrió un error, inténtalo nuevamente");
-					}
-				}
-			})
-		}
-        
-    })
-
+  
 </div>
-</div>
+</div
 <div class="col-md-12 text-right m-t-20">
 <a href="https://iptv-6ti.pages.dev/politica-de-privacidad.html" class="text-white s2 m-r-10">Política de Privacidad</a>
 @ 2024- 2025 <a href="https://iptv-6ti.pages.dev/">GOTV-IP</a> | Reservados todos los derechos </div>
-</div>
+</div
 
-</html>
+</html
 	
 	
